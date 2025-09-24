@@ -1,0 +1,12 @@
+.avatar {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px auto;
+}
+.foto-cris {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
