@@ -1,0 +1,195 @@
+/* ====================== */
+/*  ESTILO GLOBAL         */
+/* ====================== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  background: #0d0d0d;
+  color: #f5f5f5;
+  text-align: center; /* centraliza todo o conteúdo */
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+  color: #fff;
+  margin: 0 auto 20px auto;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 15px;
+  color: #eee;
+}
+
+p, li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ddd;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* ====================== */
+/*  LISTAS                */
+/* ====================== */
+ul {
+  margin: 20px auto;
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+li {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* ícone antes dos itens de destaque */
+li::before {
+  content: '✔️';
+  margin-right: 10px;
+  color: #6a11cb;
+}
+
+/* ====================== */
+/*  HERO                  */
+/* ====================== */
+.hero {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  padding: 80px 20px;
+  color: #fff;
+}
+
+.hero ul {
+  text-align: center;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.vsl {
+  margin: 30px 0;
+}
+
+/* ====================== */
+/*  BOTÕES                */
+/* ====================== */
+.btn {
+  display: inline-block;
+  padding: 16px 36px;
+  background: #fff;
+  color: #000;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.btn:hover {
+  background: #f0f0f0;
+  transform: scale(1.08);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+/* ====================== */
+/*  AVATAR                */
+/* ====================== */
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 20px auto;
+  border: 4px solid #fff;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ====================== */
+/*  CARROSSEL             */
+/* ====================== */
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 80%;
+  border-radius: 12px;
+  transition: height 0.5s ease;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slide img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.carousel-btn {
+  background: #fff;
+  color: #000;
+  border: none;
+  font-size: 28px;
+  padding: 10px 16px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.carousel-btn:hover {
+  background: #ddd;
+}
+
+/* ====================== */
+/*  CTA FINAL             */
+/* ====================== */
+.cta {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 12px;
+  margin: 40px auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}

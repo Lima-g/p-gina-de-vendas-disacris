@@ -1,269 +1,170 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Desafio Superar</title>
-<style>
-  body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: #000;
-    color: #fff;
-    line-height: 1.7;
-    text-align: center;
-  }
-  section {
-    padding: 80px 20px;
-    max-width: 900px;
-    margin: auto;
-    background: #111;
-    border-radius: 15px;
-    box-shadow: 0 0 30px rgba(255,255,255,0.1);
-    margin-bottom: 50px;
-  }
-  h1,h2 {margin-bottom: 20px; font-weight: 700;}
-  p, ul {margin-bottom: 15px;}
-  ul {list-style: disc; padding-left: 40px; text-align: left;}
-  .btn {
-    display: inline-block;
-    padding: 16px 32px;
-    margin-top: 20px;
-    background: #fff;
-    color: #000;
-    border-radius: 12px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    transition: all 0.3s ease;
-  }
-  .btn:hover {background: #f0f0f0; transform: scale(1.05);}
-  .video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(255,255,255,0.2);
-  }
-  .video-container iframe {
-    position: absolute;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-  }
-  .avatar {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 30px auto;
-    border: 4px solid #fff;
-  }
-  .avatar img {width:100%; height:100%; object-fit: cover;}
-  /* Carrossel */
-  .carousel-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    position: relative;
-  }
-  .carousel-container {overflow: hidden; width: 80%;}
-  .carousel-track {display: flex; transition: transform 0.5s ease; gap: 20px;}
-  .slide {flex: 0 0 auto;}
-  .slide img {
-    width: 100%;
-    max-width: 320px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(255,255,255,0.2);
-  }
-  .carousel-btn {
-    background: #fff;
-    color: #000;
-    border: none;
-    font-size: 28px;
-    padding: 14px 20px;
-    border-radius: 12px;
-    cursor: pointer;
-    z-index: 10;
-    transition: all 0.3s ease;
-  }
-  .carousel-btn:hover {transform: scale(1.1);}
-  @media (max-width: 768px) {
-    .carousel-container {width: 90%;}
-    .slide img {max-width: 200px; height: 200px;}
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desafio Superar</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<!-- Primeira Sessão – Conexão Imediata -->
-<section>
-  <h1>Descubra o passo a passo para se recuperar de um término e voltar a viver em paz</h1>
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <p>O segredo para regular suas emoções e quebrar o ciclo de recaídas emocionais que te impedem de seguir em frente.</p>
-  <p>Como construir autonomia emocional mesmo após uma relação desgastante, reconectando-se com sua essência.</p>
-  <p>A chave para identificar seus próprios limites e evitar relações desequilibradas no futuro.</p>
-</section>
+  <!-- LOGO -->
+  <header class="topo">
+    <img src="imagens/logo.png" alt="Logo Desafio Superar" class="logo">
+  </header>
 
-<!-- Segunda Sessão – A Dor Real -->
-<section>
-  <h2>A Dor Real</h2>
-  <p>Você pode até estar tentando seguir em frente, mas a verdade é que por dentro está tudo desmoronando.</p>
-  <p>Você se sente emocionalmente destruída, mentalmente abalada e fisicamente exausta. Parece que cada dia pesa mais que o anterior e ninguém vê.</p>
-  <p>Talvez você já tenha tentado fugir da dor:</p>
-  <ul>
-    <li>Tentou reatar por desespero.</li>
-    <li>Se jogou em distrações vazias.</li>
-    <li>Pensou até em sumir ou desistir de tudo.</li>
-  </ul>
-  <p>E mesmo assim, nada mudou.</p>
-  <p>Mas aqui vai uma verdade difícil de ouvir e libertadora: O problema não é o fim da relação. É o quanto você se perdeu de si mesma dentro dela. É a falta de autoconhecimento que te mantém preso(a) a esse ciclo de dor. E é exatamente isso que a maioria das pessoas ignora quando tenta se curar.</p>
-</section>
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Descubra o passo a passo para se recuperar de um término e voltar a viver em paz</h1>
+    <p>Assista ao vídeo e aprenda 3 coisas essenciais para chegar lá:</p>
+    <ul>
+      <li>O segredo para regular suas emoções e quebrar o ciclo de recaídas emocionais que te impedem de seguir em
+        frente.</li>
+      <li>Como construir autonomia emocional mesmo após uma relação desgastante, reconectando-se com sua essência.</li>
+      <li>A chave para identificar seus próprios limites e evitar relações desequilibradas no futuro.</li>
+    </ul>
 
-<!-- Terceira Sessão – A Nova Oportunidade -->
-<section>
-  <h2>A Nova Oportunidade</h2>
-  <p>Você não precisa mais tentar se curar sozinho(a) no escuro.</p>
-  <p>Existe um caminho guiado, profundo e transformador para sair dessa dor.</p>
-  <p>Foi por isso que criei o Desafio Superar, uma jornada de 20 dias com suporte emocional e prático, feita para quem acabou de sair de uma relação e sente que perdeu o chão.</p>
-  <p>Durante esse processo, você vai:</p>
-  <ul>
-    <li>✅ Reconstruir sua autoestima e voltar a se sentir seguro(a) com você mesmo(a).</li>
-    <li>✅ Aprender a lidar com suas emoções sem se afundar nelas.</li>
-    <li>✅ Enxergar com clareza os padrões que te colocaram nessa dor e como quebrá-los.</li>
-    <li>✅ E o mais importante: voltar a respirar com leveza, sentindo orgulho de quem você está se tornando.</li>
-  </ul>
-  <p>Você também recebe PDFs exclusivos, que te acompanham em cada fase da caminhada — como um mapa de reconstrução emocional.</p>
-  <p>Esse não é só mais um conteúdo para “pensar positivo”.</p>
-  <p>É um convite real para sair da dor com consciência, profundidade e leveza.</p>
-</section>
+    <div class="vsl">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video player"
+        frameborder="0" allowfullscreen></iframe>
+    </div>
 
-<!-- Quarta Sessão – A Oferta -->
-<section>
-  <h2>A Oferta</h2>
-  <p>O Desafio Superar é um processo de 20 dias para reconstruir sua força emocional após o fim de uma relação mesmo que hoje você sinta que não tem energia nem pra sair da cama.</p>
-  <p>Durante 20 dias, você vai receber:</p>
-  <ul>
-    <li>🎧 Áudios diários que funcionam como um abraço em palavras.</li>
-    <li>📄 PDFs com atividades práticas para cada dia do desafio.</li>
-    <li>🎥 Aulas curtas e profundas, desenhadas para transformar sua forma de pensar, sentir e reagir.</li>
-  </ul>
-  <p>BÔNUS: As 3 pessoas mais engajadas ganharão uma sessão individual de mentoria com a Cris ao final do desafio.</p>
-  <p>Esse não é um desafio para “superar o ex”.</p>
-  <p>É um desafio para se reencontrar com quem você realmente é.</p>
-</section>
+    <a href="#oferta" class="btn">Quero participar do Desafio Superar</a>
+  </section>
 
-<!-- Quinta Sessão – Prova e Autoridade -->
-<section>
-  <h2>Prova e Autoridade</h2>
-  <div class="avatar"><img src="./imagens/perfil.jpg" alt="Cris Oliveira"></div>
-  <p>Meu nome é Cris Oliveira e, assim como muitas pessoas que me acompanham hoje, eu também já passei pela dor de um término que parecia não ter fim.</p>
-  <p>Foram ciclos repetitivos de relações que me deixavam emocionalmente esgotada. Sempre terminava da mesma forma: com culpa, vazio e aquela sensação de que eu não era suficiente.</p>
-  <p>Até que eu entendi: se eu quisesse resultados diferentes, precisava fazer escolhas diferentes.</p>
-  <p>Foi quando mergulhei em livros, palestras, cursos e formações e comecei a construir um caminho de volta para mim mesma.</p>
-  <p>Hoje, atuo como mentora de relacionamentos amorosos, ajudando homens e mulheres a superarem o luto emocional após o fim de uma relação e reconstruírem suas vidas com mais confiança, clareza e autoconhecimento.</p>
-  <p>Com meus conteúdos nas redes sociais, já impactei milhões de pessoas com mensagens sobre amor-próprio, desenvolvimento pessoal e cura emocional e através dos meus ebooks, desafios e mentorias, venho ajudando centenas de pessoas a reencontrarem sentido e força depois do fim.</p>
-  <p>O Desafio Superar nasceu exatamente disso: da minha dor, da minha jornada e da certeza de que existe, sim, vida depois do fim.</p>
-  <p>E eu quero te mostrar esse caminho.</p>
-</section>
-<!-- Sexta Sessão – Garantia e Segurança -->
-<section>
-  <h2>Garantia e Segurança</h2>
-  <p>Tomar a decisão de cuidar de si mesmo depois de um término pode parecer difícil especialmente quando você ainda está lidando com dor, confusão e cansaço emocional.</p>
-  <p>É por isso que o Desafio Superar foi criado para ser um espaço leve, respeitoso e acolhedor.</p>
-  <p>Aqui, você encontra uma jornada prática, guiada e segura com conteúdos pensados para te acompanhar mesmo nos dias mais difíceis.</p>
-  <p>Você terá acesso a:</p>
-  <ul>
-    <li>🎧 Áudios diários que funcionam como um abraço em palavras</li>
-    <li>📄 PDFs com atividades que organizam sua mente e fortalecem suas emoções</li>
-    <li>🎥 Aulas transformadoras que te ajudam a ver com clareza o que hoje parece um turbilhão</li>
-  </ul>
-  <p>E o melhor: você pode começar sem medo.</p>
-  <p>Se em até 3 dias você sentir que o desafio não é pra você, é só pedir seu reembolso integral.</p>
-  <p>Simples, direto, respeitoso como tudo aqui.</p>
-  <p>Esse é o seu espaço de reconstrução.</p>
-  <p>E você merece fazer isso com leveza, não com dúvidas.</p>
-</section>
+  <!-- DOR -->
+  <section>
+    <p>Você pode até estar tentando seguir em frente, mas a verdade é que por dentro está tudo desmoronando...</p>
+    <p>Você se sente emocionalmente destruída, mentalmente abalada e fisicamente exausta. Parece que cada dia pesa mais
+      que o anterior e ninguém vê.</p>
+    <p>Talvez você já tenha tentado fugir da dor:</p>
+    <ul>
+      <li>Tentou reatar por desespero.</li>
+      <li>Se jogou em distrações vazias.</li>
+      <li>Pensou até em sumir ou desistir de tudo.</li>
+    </ul>
+    <p>E mesmo assim, <strong>nada mudou</strong>. Mas aqui vai uma verdade difícil de ouvir e libertadora: o problema
+      não é o fim da relação. É o quanto você se perdeu de si mesma dentro dela. É a falta de autoconhecimento que te
+      mantém presa a esse ciclo de dor.</p>
+  </section>
 
-<!-- Sétima Sessão – Chamada para Ação -->
-<section>
-  <h2>Chamada para Ação</h2>
-  <p>Você já carregou essa dor por tempo demais.</p>
-  <p>Já tentou resolver sozinho(a), já chorou em silêncio, já pensou até em desistir.</p>
-  <p>Agora é hora de escolher um novo caminho. Um caminho com apoio, clareza e transformação real.</p>
-  <p>O Desafio Superar começa assim que você se inscreve.</p>
-  <p>Você recebe o primeiro conteúdo direto no seu e-mail e já pode iniciar sua jornada de cura.</p>
-  <ul>
-    <li>🔹 São 20 dias de reconstrução emocional</li>
-    <li>🔹 Áudios, aulas e atividades práticas que te guiam passo a passo</li>
-    <li>🔹 E um espaço seguro pra você se reconectar com quem realmente é</li>
-  </ul>
-  <p>Clique no botão abaixo e comece hoje mesmo.</p>
-  <p>Você não precisa esperar mais para se sentir bem de novo.</p>
-  <a href="#" class="btn">👉 Sim, eu quero superar e me reconstruir agora</a>
-</section>
+  <!-- OPORTUNIDADE -->
+  <section>
+    <h2>A Nova Oportunidade</h2>
+    <p>Você não precisa mais tentar se curar sozinha no escuro. Existe um caminho guiado, profundo e transformador para
+      sair dessa dor.</p>
+    <p>Foi por isso que criei o <strong>Desafio Superar</strong>, uma jornada de 20 dias com suporte emocional e
+      prático, feita para quem acabou de sair de uma relação e sente que perdeu o chão</p>
+    <h3>Durante esse processo, você vai:</h3>
+    <ul>
+      <li>✅ Reconstruir sua autoestima e voltar a se sentir seguro(a) com você mesmo(a).</li>
+      <li>✅ Aprender a lidar com suas emoções sem se afundar nelas.</li>
+      <li>✅ Enxergar com clareza os padrões que te colocaram nessa dor e como quebrá-los.</li>
+      <li>✅ E o mais importante:<strong>Voltar a respirar com leveza, sentindo orgulho de quem você está se
+          tornando.</strong></li>
+    </ul>
+    <p>Você também recebe <strono>PDFs exclusivos</strono>, que te acompanham em cada fase da caminhada - como um mapa
+      de reconstruçõ emocional.</p>
+    <h4>Esse não é só mais um conteúdo para “pensar positivo”.
+      É um convite real para sair da dor com consciência, profundidade e leveza.
+    </h4>
+  </section>
 
-<!-- Carrossel de Depoimentos -->
+  <!-- OFERTA -->
+  <section id="oferta">
+    <p>O <strong>Desafio Superar</strong> é um processo de 20 dias para reconstruir sua força emocional após o fim de
+      uma relação mesmo que hoje você sinta que não tem energia nem pra sair da cama.</p>
+    <p>Você vai receber:</p>
+    <ul>
+      <li>🎧 Áudios diários que funcionam como um abraço em palavras.</li>
+      <li>📄 PDFs com atividades práticas.</li>
+      <li>🎥 Aulas curtas e profundas.</li>
+    </ul>
+    <p><strong>BÔNUS:</strong> As 3 pessoas mais engajadas ganharão uma sessão individual de mentoria comigo.</p>
+    <a href="https://payfast.greenn.com.br/94376?fbclid=PAZXh0bgNhZW0CMTEAAacfvy0zBfBOV0hiNvpuPGiuy1KQszw0PpulI99QSiqrOIyg0k-AxDxHA_bveg_aem_m248C6Tp7yh3n-MrGA2hVQ"
+      class="btn">Quero me reencontrar com quem realmente sou</a>
+  </section>
+
+  <!-- AUTORIDADE -->
+  <section>
+    <h2>Quem vai te guiar</h2>
+    <div class="avatar">
+      <img src="./imagens/perfil.jpg" alt="Especialista Cris Oliveira">
+    </div>
+    <p>Meu nome é Cris Oliveira e, assim como muitas pessoas que me acompanham hoje, eu também já passei pela dor de um
+      término.</p>
+    <p>Foram ciclos repetitivos de relações que me deixavam emocionalmente esgotada. Sempre terminava da mesma forma:
+      com culpa, vazio e aquela sensação de que eu não era suficiente.</p>
+    <p>Até que eu entendi: <strong>se eu quisesse resultados diferentes, precisava fazer escolhas
+        diferentes.</strong><br>
+      Foi quando mergulhei em livros, palestras, cursos e formações e comecei a construir um caminho de volta para mim
+      mesma.</p>
+    <p>Hoje atuo como mentora de relacionamentos amorosos, ajudando <strong>homens e mulheres</strong> a superarem o
+      luto emocional após o fim de uma relação e reconstruírem suas vidas com mais confiança, clareza e
+      autoconhecimento.</p>
+    <p>Com meus conteúdos nas redes sociais, já impactei milhões de pessoas com mensagens sobre amor-próprio,
+      desenvolvimento pessoal e cura emocional e através dos meus ebooks, desafios e mentorias, venho ajudando centenas
+      de pessoas a reencontrarem sentido e força depois do fim.</p>
+    <p>O Desafio Superar nasceu exatamente disso: da minha dor, da minha jornada e da certeza de que existe, sim, vida
+      depois do fim.</p>
+    <p>E eu quero te mostrar esse caminho.</p>
+  </section>
+
+  <!-- GARANTIA -->
+  <section>
+    <h2>Garantia e Segurança</h2>
+    <p>Tomar a decisão de cuidar de si mesmo depois de um término pode parecer difícil especialmente quando você ainda
+      está lidando com dor, confusão e cansaço emocional.</p>
+    <p>É por isso que o Desafio Superar foi criado para ser um espaço leve, respeitoso e acolhedor.
+      Aqui, você encontra uma jornada prática, guiada e segura com conteúdos pensados para te acompanhar mesmo nos dias
+      mais difíceis.</p>
+    <p>Você pode começar sem medo.Se em até 7 dias você sentir que o desafio não é pra você, <strong>é só pedir seu
+        reembolso integral</strong>.
+      Simples, direto, respeitoso como tudo aqui.
+      Esse é o seu espaço de reconstrução.
+      E você merece fazer isso com leveza, não com dúvidaso.</p>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta">
+    <p>Você já carregou essa dor por tempo demais.
+      Já tentou resolver sozinho(a), já chorou em silêncio, já pensou até em desistir.</p>
+    <p>Agora é hora de escolher um novo caminho. Um caminho com apoio, clareza e transformação real.</p>
+    <p>O Desafio Superar começa assim que você se inscreve.
+      Você recebe o primeiro conteúdo direto no seu e-mail e já pode iniciar sua jornada de cura.</p>
+    <ul>
+      <li>🔹 São 20 dias de reconstrução emocional</li>
+      <li>🔹 Áudios, aulas e atividades práticas que te guiam passo a passo</li>
+      <li>🔹 E um espaço seguro pra você se reconectar com quem realmente é</li>
+      <p>Clique no botão abaixo e comece hoje mesmo.
+        Você não precisa esperar mais para se sentir bem de novo.</p>
+      <a href="https://payfast.greenn.com.br/94376?fbclid=PAZXh0bgNhZW0CMTEAAacfvy0zBfBOV0hiNvpuPGiuy1KQszw0PpulI99QSiqrOIyg0k-AxDxHA_bveg_aem_m248C6Tp7yh3n-MrGA2hVQ"
+        class="btn">👉 Sim, eu quero superar e me reconstruir agora</a>
+  </section>
+
+  <!-- CARROSSEL -->
 <section>
-  <h2>O que dizem os alunos</h2>
+  <h2>Depoimentos de Alunos</h2>
   <div class="carousel-wrapper">
-    <button class="carousel-btn prev">&lt;</button>
+    <button class="carousel-btn prev">‹</button>
     <div class="carousel-container">
       <div class="carousel-track">
-        <div class="slide"><img src="./imagens/depoimentos-1.jpg" alt="Aluna 1"></div>
-        <div class="slide"><img src="./imagens/depoimentos-2.jpg" alt="Aluna 2"></div>
-        <div class="slide"><img src="imagens/depoimentos-3.jpg" alt="Aluna 3"></div>
-        <div class="slide"><img src="./imagens/depoimentos-4.jpg" alt="Aluna 4"></div>
-        <div class="slide"><img src="./imagens/depoimentos-5.jpg" alt="Aluna 5"></div>
-        <div class="slide"><img src="./imagens/depoimentos-6.jpg" alt="Aluna 6"></div>
-        <div class="slide"><img src="./imagens/depoimentos-7.jpg" alt="Aluna 7"></div>
+        <div class="slide"><img src="./imagens/depoimentos-1.jpg" alt="Depoimento 1"></div>
+        <div class="slide"><img src="./imagens/depoimentos-2.jpg" alt="Depoimento 2"></div>
+        <div class="slide"><img src="./imagens/depoimentos-3.jpg" alt="Depoimento 3"></div>
+        <div class="slide"><img src="./imagens/depoimentos-4.jpg" alt="Depoimento 4"></div>
+        <div class="slide"><img src="./imagens/depoimentos-5.jpg" alt="Depoimento 5"></div>
+        <div class="slide"><img src="./imagens/depoimentos-6.jpg" alt="Depoimento 6"></div>
+        <div class="slide"><img src="./imagens/depoimentos-7.jpg" alt="Depoimento 7"></div>
       </div>
     </div>
-    <button class="carousel-btn next">&gt;</button>
+    <button class="carousel-btn next">›</button>
   </div>
 </section>
 
-<script>
-  const track = document.querySelector('.carousel-track');
-  const slides = Array.from(track.children);
-  const nextBtn = document.querySelector('.next');
-  const prevBtn = document.querySelector('.prev');
-  const container = document.querySelector('.carousel-container');
-
-  let index = 0;
-
-  function updateCarousel() {
-    const slideWidth = slides[0].getBoundingClientRect().width + 20; // gap
-    const maxIndex = slides.length - Math.floor(container.offsetWidth / slideWidth);
-    const clampedIndex = Math.min(index, maxIndex);
-    track.style.transform = `translateX(-${clampedIndex * slideWidth}px)`;
-  }
-
-  nextBtn.addEventListener('click', () => {
-    index++;
-    const maxIndex = slides.length - Math.floor(container.offsetWidth / (slides[0].getBoundingClientRect().width + 20));
-    if (index > maxIndex) index = 0;
-    updateCarousel();
-  });
-
-  prevBtn.addEventListener('click', () => {
-    index--;
-    if (index < 0) index = slides.length - 1;
-    updateCarousel();
-  });
-
-  window.addEventListener('resize', updateCarousel);
-  updateCarousel();
-</script>
-
+  <script src="script.js"></script>
 </body>
+
 </html>
