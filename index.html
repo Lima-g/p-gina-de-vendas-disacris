@@ -6,6 +6,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Desafio Superar</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* --- EFEITOS VISUAIS PROFISSIONAIS --- */
+
+    .highlight {
+      background: linear-gradient(90deg, #F5E8C7, #F5E8C7, #ffd700, #aad4ff);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textGradient 4s ease infinite, pulse 1.5s ease-in-out infinite;
+      font-weight: 700;
+    }
+
+    @keyframes textGradient {
+      0%, 100% { background-position: 0% 50% }
+      50% { background-position: 100% 50% }
+    }
+
+    .underline {
+      position: relative;
+      display: inline-block;
+      color: #F5E8C7;
+    }
+
+    .underline::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 3px;
+      left: 0;
+      bottom: -3px;
+      background: linear-gradient(90deg, #F5E8C7, #ffd700, #aad4ff);
+      transition: width 0.4s ease;
+      border-radius: 3px;
+    }
+
+    .underline:hover::after { width: 100%; }
+
+    p strong, li strong, h2 span, h3 span {
+      display: inline-block;
+      position: relative;
+      cursor: default;
+    }
+
+    p strong:hover, li strong:hover, h2 span:hover, h3 span:hover {
+      transform: scale(1.1);
+      text-shadow: 2px 2px 10px rgba(255,192,203,0.6);
+    }
+  </style>
 </head>
 
 <body>
@@ -17,12 +65,11 @@
 
   <!-- HERO -->
   <section class="hero">
-    <h1>Descubra o passo a passo para se recuperar de um término e voltar a viver em paz</h1>
-    <p>Assista ao vídeo e aprenda 3 coisas essenciais para chegar lá:</p>
+    <h1>Descubra o passo a passo para se recuperar de um <strong class="highlight">término</strong> e voltar a viver em <strong class="highlight">paz</strong></h1>
+    <p>Assista ao vídeo e aprenda 3 coisas <span class="highlight">essenciais</span> para chegar lá:</p>
     <ul>
-      <li>O segredo para regular suas emoções e quebrar o ciclo de recaídas emocionais que te impedem de seguir em
-        frente.</li>
-      <li>Como construir autonomia emocional mesmo após uma relação desgastante, reconectando-se com sua essência.</li>
+      <li><strong class="highlight">O segredo</strong> para regular suas emoções e quebrar o ciclo de recaídas emocionais que te impedem de seguir em frente.</li>
+      <li>Como construir <strong class="highlight">autonomia emocional</strong> mesmo após uma relação desgastante, reconectando-se com sua essência.</li>
       <li>A chave para identificar seus próprios limites e evitar relações desequilibradas no futuro.</li>
     </ul>
 
@@ -31,138 +78,108 @@
         frameborder="0" allowfullscreen></iframe>
     </div>
 
-    <a href="#oferta" class="btn">Quero participar do Desafio Superar</a>
+    <a href="https://payfast.greenn.com.br/135447" target="_blank" class="btn">Quero participar do <span class="highlight">Desafio Superar</span></a>
   </section>
 
   <!-- DOR -->
-  <section>
-    <p>Você pode até estar tentando seguir em frente, mas a verdade é que por dentro está tudo desmoronando...</p>
-    <p>Você se sente emocionalmente destruída, mentalmente abalada e fisicamente exausta. Parece que cada dia pesa mais
-      que o anterior e ninguém vê.</p>
+  <section class="content">
+    <p>Você pode até estar tentando seguir em frente, mas a verdade é que por dentro está tudo <strong class="highlight">desmoronando</strong>...</p>
+    <p>Você se sente emocionalmente <strong class="highlight">destruída</strong>, mentalmente <strong class="highlight">abalada</strong> e fisicamente <strong class="highlight">exausta</strong>. Parece que cada dia pesa mais que o anterior e ninguém vê.</p>
     <p>Talvez você já tenha tentado fugir da dor:</p>
     <ul>
-      <li>Tentou reatar por desespero.</li>
-      <li>Se jogou em distrações vazias.</li>
+      <li>Tentou <strong class="highlight">reatar</strong> por desespero.</li>
+      <li>Se jogou em <strong class="highlight">distrações vazias</strong>.</li>
       <li>Pensou até em sumir ou desistir de tudo.</li>
     </ul>
-    <p>E mesmo assim, <strong>nada mudou</strong>. Mas aqui vai uma verdade difícil de ouvir e libertadora: o problema
-      não é o fim da relação. É o quanto você se perdeu de si mesma dentro dela. É a falta de autoconhecimento que te
-      mantém presa a esse ciclo de dor.</p>
+    <p>E mesmo assim, <strong class="highlight">nada mudou</strong>. Mas aqui vai uma verdade difícil de ouvir e libertadora: o problema não é o fim da relação. É o quanto você se perdeu de si mesma dentro dela. É a falta de <strong class="highlight">autoconhecimento</strong> que te mantém presa a esse ciclo de dor.</p>
   </section>
 
   <!-- OPORTUNIDADE -->
-  <section>
-    <h2>A Nova Oportunidade</h2>
-    <p>Você não precisa mais tentar se curar sozinha no escuro. Existe um caminho guiado, profundo e transformador para
-      sair dessa dor.</p>
-    <p>Foi por isso que criei o <strong>Desafio Superar</strong>, uma jornada de 20 dias com suporte emocional e
-      prático, feita para quem acabou de sair de uma relação e sente que perdeu o chão</p>
+  <section class="content">
+    <h4>Você não precisa mais tentar se curar sozinha no escuro. Existe um caminho guiado, profundo e transformador para sair dessa dor.</h4>
+    <p>Foi por isso que criei o <strong class="highlight">Desafio Superar</strong>, uma jornada de 20 dias com suporte emocional e prático, feita para quem acabou de sair de uma relação e sente que perdeu o chão.</p>
     <h3>Durante esse processo, você vai:</h3>
     <ul>
       <li>✅ Reconstruir sua autoestima e voltar a se sentir seguro(a) com você mesmo(a).</li>
       <li>✅ Aprender a lidar com suas emoções sem se afundar nelas.</li>
       <li>✅ Enxergar com clareza os padrões que te colocaram nessa dor e como quebrá-los.</li>
-      <li>✅ E o mais importante:<strong>Voltar a respirar com leveza, sentindo orgulho de quem você está se
-          tornando.</strong></li>
+      <li>✅ E o mais importante: Voltar a respirar com leveza, sentindo orgulho de quem você está se tornando.</li>
     </ul>
-    <p>Você também recebe <strono>PDFs exclusivos</strono>, que te acompanham em cada fase da caminhada - como um mapa
-      de reconstruçõ emocional.</p>
-    <h4>Esse não é só mais um conteúdo para “pensar positivo”.
-      É um convite real para sair da dor com consciência, profundidade e leveza.
-    </h4>
+    <p>Você também recebe <span class="highlight">PDFs exclusivos</span>, que te acompanham em cada fase da caminhada - como um mapa de reconstrução emocional.</p>
+    <h4>Esse não é só mais um conteúdo para “pensar positivo”. É um convite real para sair da dor com consciência, profundidade e <strong class="highlight">leveza</strong>.</h4>
   </section>
 
   <!-- OFERTA -->
-  <section id="oferta">
-    <p>O <strong>Desafio Superar</strong> é um processo de 20 dias para reconstruir sua força emocional após o fim de
-      uma relação mesmo que hoje você sinta que não tem energia nem pra sair da cama.</p>
+  <section id="oferta" class="content">
+    <p>O <strong class="highlight">Desafio Superar</strong> é um processo de 20 dias para reconstruir sua força emocional após o fim de uma relação mesmo que hoje você sinta que não tem energia nem pra sair da cama.</p>
     <p>Você vai receber:</p>
     <ul>
       <li>🎧 Áudios diários que funcionam como um abraço em palavras.</li>
       <li>📄 PDFs com atividades práticas.</li>
       <li>🎥 Aulas curtas e profundas.</li>
     </ul>
-    <p><strong>BÔNUS:</strong> As 3 pessoas mais engajadas ganharão uma sessão individual de mentoria comigo.</p>
-    <a href="https://payfast.greenn.com.br/94376?fbclid=PAZXh0bgNhZW0CMTEAAacfvy0zBfBOV0hiNvpuPGiuy1KQszw0PpulI99QSiqrOIyg0k-AxDxHA_bveg_aem_m248C6Tp7yh3n-MrGA2hVQ"
+    <p><strong class="highlight">BÔNUS:</strong> As 3 pessoas mais engajadas ganharão uma sessão individual de mentoria comigo.</p>
+    <a href="https://payfast.greenn.com.br/135447" target="_blank"
       class="btn">Quero me reencontrar com quem realmente sou</a>
   </section>
 
   <!-- AUTORIDADE -->
-  <section>
-    <h2>Quem vai te guiar</h2>
+  <section class="content">
+    <h2>Quem vai te <span class="highlight">guiar</span></h2>
     <div class="avatar">
       <img src="./imagens/perfil.jpg" alt="Especialista Cris Oliveira">
     </div>
-    <p>Meu nome é Cris Oliveira e, assim como muitas pessoas que me acompanham hoje, eu também já passei pela dor de um
-      término.</p>
-    <p>Foram ciclos repetitivos de relações que me deixavam emocionalmente esgotada. Sempre terminava da mesma forma:
-      com culpa, vazio e aquela sensação de que eu não era suficiente.</p>
-    <p>Até que eu entendi: <strong>se eu quisesse resultados diferentes, precisava fazer escolhas
-        diferentes.</strong><br>
-      Foi quando mergulhei em livros, palestras, cursos e formações e comecei a construir um caminho de volta para mim
-      mesma.</p>
-    <p>Hoje atuo como mentora de relacionamentos amorosos, ajudando <strong>homens e mulheres</strong> a superarem o
-      luto emocional após o fim de uma relação e reconstruírem suas vidas com mais confiança, clareza e
-      autoconhecimento.</p>
-    <p>Com meus conteúdos nas redes sociais, já impactei milhões de pessoas com mensagens sobre amor-próprio,
-      desenvolvimento pessoal e cura emocional e através dos meus ebooks, desafios e mentorias, venho ajudando centenas
-      de pessoas a reencontrarem sentido e força depois do fim.</p>
-    <p>O Desafio Superar nasceu exatamente disso: da minha dor, da minha jornada e da certeza de que existe, sim, vida
-      depois do fim.</p>
+    <p>Meu nome é <strong class="highlight">Cris Oliveira</strong> e, assim como muitas pessoas que me acompanham hoje, eu também já passei pela dor de um término.</p>
+    <p>Foram ciclos repetitivos de relações que me deixavam emocionalmente esgotada. Sempre terminava da mesma forma: com culpa, vazio e aquela sensação de que eu não era suficiente.</p>
+    <p>Até que eu entendi: <strong class="highlight">se eu quisesse resultados diferentes, precisava fazer escolhas diferentes</strong>.<br>
+      Foi quando mergulhei em livros, palestras, cursos e formações e comecei a construir um caminho de volta para mim mesma.</p>
+    <p>Hoje atuo como mentora de relacionamentos amorosos, ajudando <strong class="highlight">homens e mulheres</strong> a superarem o luto emocional após o fim de uma relação e reconstruírem suas vidas com mais <strong class="highlight">confiança</strong>, clareza e autoconhecimento.</p>
+    <p>Com meus conteúdos nas redes sociais, já impactei milhões de pessoas com mensagens sobre <strong class="highlight">amor-próprio</strong>, desenvolvimento pessoal e cura emocional e através dos meus ebooks, desafios e mentorias, venho ajudando centenas de pessoas a reencontrarem sentido e força depois do fim.</p>
+    <p>O <strong class="highlight">Desafio Superar</strong> nasceu exatamente disso: da minha dor, da minha jornada e da certeza de que existe, sim, vida depois do fim.</p>
     <p>E eu quero te mostrar esse caminho.</p>
   </section>
 
   <!-- GARANTIA -->
-  <section>
-    <h2>Garantia e Segurança</h2>
-    <p>Tomar a decisão de cuidar de si mesmo depois de um término pode parecer difícil especialmente quando você ainda
-      está lidando com dor, confusão e cansaço emocional.</p>
-    <p>É por isso que o Desafio Superar foi criado para ser um espaço leve, respeitoso e acolhedor.
-      Aqui, você encontra uma jornada prática, guiada e segura com conteúdos pensados para te acompanhar mesmo nos dias
-      mais difíceis.</p>
-    <p>Você pode começar sem medo.Se em até 7 dias você sentir que o desafio não é pra você, <strong>é só pedir seu
-        reembolso integral</strong>.
-      Simples, direto, respeitoso como tudo aqui.
-      Esse é o seu espaço de reconstrução.
-      E você merece fazer isso com leveza, não com dúvidaso.</p>
+  <section class="content">
+    <h2>Garantia e <span class="highlight">Segurança</span></h2>
+    <p>Tomar a decisão de cuidar de si mesmo depois de um término pode parecer difícil especialmente quando você ainda está lidando com dor, confusão e cansaço emocional.</p>
+    <p>É por isso que o <strong class="highlight">Desafio Superar</strong> foi criado para ser um espaço leve, respeitoso e acolhedor. Aqui, você encontra uma jornada prática, guiada e segura com conteúdos pensados para te acompanhar mesmo nos dias mais difíceis.</p>
+    <p>Você pode começar sem medo. Se em até 7 dias você sentir que o desafio não é pra você, <strong class="highlight">é só pedir seu reembolso integral</strong>. Simples, direto, respeitoso como tudo aqui. Esse é o seu espaço de reconstrução. E você merece fazer isso com <strong class="highlight">leveza</strong>, não com dúvidas.</p>
   </section>
 
   <!-- CTA FINAL -->
   <section class="cta">
-    <p>Você já carregou essa dor por tempo demais.
-      Já tentou resolver sozinho(a), já chorou em silêncio, já pensou até em desistir.</p>
+    <p>Você já carregou essa dor por tempo demais. Já tentou resolver sozinho(a), já chorou em silêncio, já pensou até em desistir.</p>
     <p>Agora é hora de escolher um novo caminho. Um caminho com apoio, clareza e transformação real.</p>
-    <p>O Desafio Superar começa assim que você se inscreve.
-      Você recebe o primeiro conteúdo direto no seu e-mail e já pode iniciar sua jornada de cura.</p>
+    <p>O <strong class="highlight">Desafio Superar</strong> começa assim que você se inscreve. Você recebe o primeiro conteúdo direto no seu e-mail e já pode iniciar sua jornada de cura.</p>
     <ul>
-      <li>🔹 São 20 dias de reconstrução emocional</li>
+      <li>🔹 São 20 dias de <strong class="highlight">reconstrução emocional</strong></li>
       <li>🔹 Áudios, aulas e atividades práticas que te guiam passo a passo</li>
       <li>🔹 E um espaço seguro pra você se reconectar com quem realmente é</li>
-      <p>Clique no botão abaixo e comece hoje mesmo.
-        Você não precisa esperar mais para se sentir bem de novo.</p>
-      <a href="https://payfast.greenn.com.br/94376?fbclid=PAZXh0bgNhZW0CMTEAAacfvy0zBfBOV0hiNvpuPGiuy1KQszw0PpulI99QSiqrOIyg0k-AxDxHA_bveg_aem_m248C6Tp7yh3n-MrGA2hVQ"
-        class="btn">👉 Sim, eu quero superar e me reconstruir agora</a>
+    </ul>
+    <p>Clique no botão abaixo e comece hoje mesmo. Você não precisa esperar mais para se sentir bem de novo.</p>
+    <a href="https://payfast.greenn.com.br/135447" class="btn">👉 Sim, eu quero <strong class="highlight">superar</strong> e me reconstruir agora</a>
   </section>
 
   <!-- CARROSSEL -->
-<section>
-  <h2>Depoimentos de Alunos</h2>
-  <div class="carousel-wrapper">
-    <button class="carousel-btn prev">‹</button>
-    <div class="carousel-container">
-      <div class="carousel-track">
-        <div class="slide"><img src="./imagens/depoimentos-1.jpg" alt="Depoimento 1"></div>
-        <div class="slide"><img src="./imagens/depoimentos-2.jpg" alt="Depoimento 2"></div>
-        <div class="slide"><img src="./imagens/depoimentos-3.jpg" alt="Depoimento 3"></div>
-        <div class="slide"><img src="./imagens/depoimentos-4.jpg" alt="Depoimento 4"></div>
-        <div class="slide"><img src="./imagens/depoimentos-5.jpg" alt="Depoimento 5"></div>
-        <div class="slide"><img src="./imagens/depoimentos-6.jpg" alt="Depoimento 6"></div>
-        <div class="slide"><img src="./imagens/depoimentos-7.jpg" alt="Depoimento 7"></div>
+  <section class="content">
+    <h2>Depoimentos de <span class="highlight">Alunos</span></h2>
+    <div class="carousel-wrapper">
+      <button class="carousel-btn prev">‹</button>
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="slide"><img src="./imagens/depoimentos-1.jpg" alt="Depoimento 1"></div>
+          <div class="slide"><img src="./imagens/depoimentos-2.jpg" alt="Depoimento 2"></div>
+          <div class="slide"><img src="./imagens/depoimentos-3.jpg" alt="Depoimento 3"></div>
+          <div class="slide"><img src="./imagens/depoimentos-4.jpg" alt="Depoimento 4"></div>
+          <div class="slide"><img src="./imagens/depoimentos-5.jpg" alt="Depoimento 5"></div>
+          <div class="slide"><img src="./imagens/depoimentos-6.jpg" alt="Depoimento 6"></div>
+          <div class="slide"><img src="./imagens/depoimentos-7.jpg" alt="Depoimento 7"></div>
+        </div>
       </div>
+      <button class="carousel-btn next">›</button>
     </div>
-    <button class="carousel-btn next">›</button>
-  </div>
-</section>
+  </section>
 
   <script src="script.js"></script>
 </body>
